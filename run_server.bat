@@ -1,0 +1,1 @@
+java -jar "%~dp0BenchmarkScoresServer/target/scala-2.10/BenchmarkScoresServer.jar" %*
