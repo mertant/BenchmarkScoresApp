@@ -5,7 +5,7 @@ REST API comprising:
 * a Scala server application which aggregates benchmark score data from an online API (not included), and
 * a Java client application that can access this aggregated by-country data from the server.
 
-The two executable JARs and their source code are included.
+The two executable JARs are included.
 
 BenchmarkScoresServer is a Scala application that makes outgoing HTTP requests to the online API and updates its internal data according to the responses. It also hosts an HTTP interface at localhost that can serve average data to incoming requests from clients. Libraries used are akka, spray-client, spray-httpx, spray-json, with Scala version 2.10.5 and JRE 1.8.0. Sbt, sbt-assembly and sbt-eclipse were used for dependencies and building.
 
@@ -13,7 +13,7 @@ BenchmarkScoresClient is a simple Java commandline application which connects to
 
 ### How to run
 
-The root of this package contains two .bat files to start the server and client respectively. Alternatively, in the command line:
+The root contains two .bat files to start the server and client respectively. Alternatively, in the command line:
 
 >cd \BenchmarkScoresServer\target\scala-2.10
 >
